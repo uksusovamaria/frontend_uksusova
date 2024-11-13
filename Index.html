@@ -1,13 +1,205 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Документ</title>
+    <link rel="stylesheet" href="styles/base/normalize.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Речевед - лучший сайт логопеда в мире</title>
 </head>
-    <header>Заголовок сайта </header>
-    Главная страница
+
 <body>
+    <div class="container">
+        <!-- Заголовок -->
+        <header class="header">
+            <!-- Логотип -->
+            <div class="logo">
+                <img src="img/black_on_white.png" width="210px" height="210px" alt="">
+            </div>
+            <!--/ Логотип -->
+            <!-- Навигация -->
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item nav__item--active">
+                        <a class="nav__link" href="#">Главная</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="#">Услуги</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="#">Отзывы</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="#">О логопеде</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="#">Контакты</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="#">Вопросы</a>
+                    </li>
+                </ul>
+                <div class="nav_item--language">
+                    <a class="nav__link">
+                        <img class="language" src="img/2.jpg" alt="">
+                    </a>
+                </div>
+                <div class="enter">
+                    <button type="button">
+                        <img src="img/icon/login.svg" alt="Войти" width="16" height="16">
+                        <span>Войти</span>
+                    </button>
+                </div>
+            </nav>
+            <!--/ Навигация -->
+        </header>
+
+
+        <label for="site-search">Поиск по сайту:</label>
+        <input type="search" id="site-search" name="q" />
+        <button>Поиск</button>
+        <section>
+            <h1>Услуги логопеда</h1>
+            <ul>
+                <li>Диагностика и оценка состояния речи ребёнка</li>
+                <li>Устранение проблем с произношением звуков​​​​​​​</li>
+                <li>Развитие фонематического слуха и восприятия​​​​​​​</li>
+                <li>Лучшение лексического запаса и грамматического строя речи</li>
+                <li>Обучение правильному дыханию и голосоподаче</li>
+            </ul>
+            <div>
+                <img src="img/services.jpg" alt="">
+            </div>
+            <div>
+                <div>
+                    <a href="">Записаться на приём</a>
+                </div>
+                <div>
+                    <form action="handler.php" enctype="multipart/form-data" method="post">
+                        <div class="flexblock_popup_title">
+                            <span>Заполните форму и мы вам перезвоним</span>
+                        </div>
+                        <input type="hidden" name="Название заявки" value="Записаться на приём">
+                        <div class="field">
+                            <div class="field_title">Имя</div>
+                            <div class="field_description"></div>
+                            <div class="field_input field_input_text">
+                                <input type="text" required="required" name="Имя" placeholder="Иван">
+                            </div>
+                        </div>
+                        <div class="field">
+                            <div class="field_title">Телефон</div>
+                            <div class="field_description"></div>
+                            <div class="field_input field_input_text">
+                                <input type="text" required="required" name="phone" placeholder="+7 800 999-55-55">
+                            </div>
+                        </div>
+                        <div class="field">
+                            <div class="field_title"></div>
+                            <div class="field_description"></div>
+                            <div class="field_input">
+                                <input class="input_flex_btn_11547449_9" type="submit" value="Отправить">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+        </section>
+        <section class="card__">
+            <div class="card__content">
+                <h2 class="card__peace-forest-title">Отзывы</h2>
+                <p class="card__description">
+                    Здесь вы можете прочесть отзывы пациентов и найти ответы на вопросы или написать свой отзыв
+                </p>
+                <div>
+                    <div class="reservation">
+                        <button>Добавить Отзывы</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="card">
+            <div class="card__img">
+                <img src="img/maps.jpg" alt="">
+            </div>
+            <div class="card__content">
+                <h2 class="card__title">Карта</h2>
+                <p class="card__description">
+                    Адрес: г. Москва, ул. Максима Горького, 29
+                </p>
+                <a class="card__link" href="">Читать далее</a>
+            </div>
+        </section>
+        <section class="connection">
+            <div class="connection__content">
+                <h1 class="connection__title">Контакты</h1>
+                <p class="connection__description">
+                    Москва, Россия
+                </p>
+                <p class="connection__description">
+                    +123 456 789 000<br>
+                    info@logoped.com
+                </p>
+            </div>
+            <div class="social-network">
+                <img class="social-network__img" src="img/icon/instagram.svg" alt="">
+                <img class="social-network__img" src="img/icon/facebook.svg" alt="">
+                <img class="social-network__img" src="img/icon/twitter.svg" alt="">
+            </div>
+            <div class="booking">
+                <img class="booking__img" src="img/about_us.jpg" alt="">
+                <button class="booking__button">Записаться на прием</button>
+            </div>
+        </section>
+        
+        <!-- Формы -->
+        <div>
+            <!-- Форма "Войдите в профиль" -->
+            <section>
+                <button type="button"><img src="img/icon/close.svg" alt="Закрыть окно" width="24" height="24"></button>
+                <h2>Войдите в профиль</h2>
+                <div>
+                    <button type="button">Войти</button>
+                    <button type="button">Регистрация</button>
+                </div>
+            </section>
+
+            <section>
+                <button type="button"><img src="img/icon/close.svg" alt="Закрыть окно" width="24" height="24"></button>
+                <h2>Регистрация</h2>
+                <form action="/" method="post">
+                    <input type="text" name="name" placeholder="Имя" required>
+                    <input type="email" name="email" placeholder="Логин" required>
+                    <fieldset>
+                        <div>
+                            <input type="password" name="password" placeholder="Пароль" required>
+                            <span>Минимум 8 символов</span>
+                        </div>
+                        <input type="password" name="repeat-password" placeholder="Повторите пароль" required>
+                    </fieldset>
+                    <fieldset>
+                        <input type="submit" value="Зарегистрироваться">
+                        <button type="button">Отмена</button>
+                    </fieldset>
+                    <button type="button">У меня уже есть аккаунт</button>
+                </form>
+            </section>
+            <section>
+                <button type="button"><img src="img/icon/close.svg" alt="Закрыть окно" width="24" height="24"></button>
+                <h2>Войти</h2>
+                <form action="/" method="post">
+                    <input type="email" name="email" placeholder="Логин" required>
+                    <input type="password" name="password" placeholder="Пароль" required>
+                    <fieldset>
+                        <input type="submit" value="Войти">
+                        <button type="button">Отмена</button>
+                    </fieldset>
+                    <button type="button">У меня еще нет аккаунта</button>
+                </form>
+            </section>
+        </div>
+    </div>
 </body>
+
 </html>
